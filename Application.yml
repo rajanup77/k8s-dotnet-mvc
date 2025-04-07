@@ -4,7 +4,7 @@ metadata:
   name: dotnet-mvc
   namespace: dotnet
 spec:
-  project: default
+  project: dotnet
 
   source:
     repoURL: https://github.com/rajanup77/k8s-dotnet-mvc
@@ -16,7 +16,7 @@ spec:
 
   syncPolicy:
     syncOptions:
-    - CreateNamespace=true
+    - CreateNamespace=false
 
     automated:
       selfHeal: true
