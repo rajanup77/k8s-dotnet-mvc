@@ -1,0 +1,24 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: dotnet-mvc
+  namespace: dotnet
+spec:
+  project: default
+
+  source:
+    repoURL: https://github.com/rajanup77/k8s-dotnet-mvc
+    targetRevision: HEAD
+    path: code
+  destination: 
+    server: https://kubernetes.default.svc
+    namespace: dotnet
+
+  syncPolicy:
+    syncOptions:
+    - CreateNamespace=true
+
+    automated:
+      selfHeal: true
+      prune: true
+
