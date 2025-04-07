@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: mvc
+  namespace: dotnet
+spec:
+  selector:
+    matchLabels:
+      app: mvc
+  replicas: 2
+  template:
+    metadata:
+      labels:
+        app: mvc
+    spec:
+      containers:
+      - name: mvc
+        image: rajanup77/dotnet-mvc
+        ports:
+        - containerPort: 5206
+
