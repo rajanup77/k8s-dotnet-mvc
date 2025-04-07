@@ -9,7 +9,7 @@ spec:
   source:
     repoURL: https://github.com/rajanup77/k8s-dotnet-mvc
     targetRevision: HEAD
-    path: code
+    path: yamls
   destination: 
     server: https://kubernetes.default.svc
     namespace: dotnet
