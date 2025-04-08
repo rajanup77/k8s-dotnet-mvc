@@ -7,7 +7,7 @@ spec:
   selector:
     app: dotnet
   ports:
-    - name: http2
-      port: 443
+    - name: http
+      port: 80
       protocol: TCP
       targetPort: 5206
