@@ -3,10 +3,9 @@ kind: Service
 metadata:
   name: dotnet-svc
 spec:
-  type: ClusterIP
+  selector:
+    app.kubernetes.io/name: dotnet
   ports:
+    - protocol: TCP
       port: 5206
       targetPort: 5206
-      protocol: TCP
-  selector:
-    app: dotnet
