@@ -1,0 +1,12 @@
+kind: Service
+apiVersion: v1
+metadata:
+  name: service-nodeport
+spec:
+  selector:
+    app: myapp
+  ports:
+  - protocol: TCP
+    port: 5206
+    nodePort: 32321
+  type: NodePort
