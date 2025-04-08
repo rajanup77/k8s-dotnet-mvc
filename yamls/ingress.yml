@@ -15,7 +15,7 @@ spec:
         paths:
           - backend:
               service:
-                name: dotnet
+                name: dotnet-svc
                 port:
                   name: https
             path: /
