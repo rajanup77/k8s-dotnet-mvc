@@ -4,9 +4,9 @@ metadata:
   name: service-nodeport
 spec:
   selector:
-    app: myapp
+    app: dotnet
   ports:
   - protocol: TCP
     port: 5206
-    nodePort: 32321
+    nodePort: 32300
   type: NodePort
