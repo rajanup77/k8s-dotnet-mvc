@@ -1,7 +1,7 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: dotnet-svc
+  name: dotnet
 spec:
   type: ClusterIP
   ports:
@@ -9,4 +9,4 @@ spec:
       protocol: TCP
       targetPort: 5206
   selector:
-    myapp: dotnet-pod
+    myapp: dotnet
