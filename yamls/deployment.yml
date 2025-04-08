@@ -1,20 +1,20 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: dotnet-deployment
+  name: dotnet
   namespace: dotnet
 spec:
   selector:
     matchLabels:
       app: dotnet
-  replicas: 2
+  replicas: 1
   template:
     metadata:
       labels:
         app: dotnet
     spec:
       containers:
-      - name: dotnet-pod
+      - name: dotnet
         image: rajanup77/dotnet-mvc
         ports:
         - containerPort: 5206
