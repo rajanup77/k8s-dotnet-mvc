@@ -14,7 +14,7 @@ spec:
         app: dotnet
     spec:
       containers:
-      - name: dotnet-pod
+      - name: dotnet
         image: rajanup77/dotnet-mvc
         ports:
         - containerPort: 5206
