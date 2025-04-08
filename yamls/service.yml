@@ -7,6 +7,5 @@ spec:
   ports:
       port: 5206
       protocol: TCP
-      targetPort: 5206
   selector:
     myapp: dotnet
