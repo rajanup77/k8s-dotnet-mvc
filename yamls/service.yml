@@ -4,7 +4,7 @@ metadata:
   name: dotnet-svc
 spec:
   selector:
-    app.kubernetes.io/name: dotnet
+    app.kubernetes.io/app: dotnet
   ports:
     - name: http
       protocol: TCP
