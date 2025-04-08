@@ -5,7 +5,8 @@ metadata:
 spec:
   type: ClusterIP
   ports:
-    - port: 5206
-      name: http
+      port: 5206
+      protocol: TCP
+      targetPort: 5206
   selector:
     myapp: dotnet-pod
