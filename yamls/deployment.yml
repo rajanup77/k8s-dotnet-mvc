@@ -6,12 +6,12 @@ metadata:
 spec:
   selector:
     matchLabels:
-      app: dotnet
+      yeha: chaapp
   replicas: 2
   template:
     metadata:
       labels:
-        app: dotnet
+        yeha: chaapp
     spec:
       containers:
       - name: dotnet
