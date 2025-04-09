@@ -4,9 +4,9 @@ metadata:
   name: dotnet-ingress
   namespace: dotnet
   annotations:
-    nginx.ingress.kubernetes.io/backend-protocol: HTTPS
+    nginx.ingress.kubernetes.io/backend-protocol: HTTP
     nginx.ingress.kubernetes.io/force-ssl-redirect: 'true'
-    nginx.ingress.kubernetes.io/ssl-passthrough: 'true'
+    nginx.ingress.kubernetes.io/ssl-passthrough: 'false'
 spec:
   ingressClassName: nginx
   rules:
