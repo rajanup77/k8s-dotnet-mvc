@@ -18,11 +18,10 @@ spec:
                 name: svckoname
                 port:
                   name: https
+                  number: 443
             path: /
             pathType: Prefix
   tls:
     - hosts:
         - dotnet.ad.irdlab.com
       secretName: dotnet-tls
-status:
-  loadBalancer: {}
