@@ -8,6 +8,6 @@ spec:
     app: dotnet
   ports:
     - name: http
-      port: 5206
+      port: 80
       protocol: TCP
       targetPort: 5206
