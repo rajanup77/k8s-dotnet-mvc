@@ -4,7 +4,7 @@ metadata:
   name: service-nodeport
 spec:
   selector:
-    app: dotnet
+    yeha: chaapp
   ports:
   - protocol: TCP
     port: 5206
