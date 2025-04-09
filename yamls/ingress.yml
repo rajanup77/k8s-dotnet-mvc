@@ -17,7 +17,7 @@ spec:
               service:
                 name: svckoname
                 port:
-                  name: https
+                  name: http
             path: /
             pathType: Prefix
   tls:
