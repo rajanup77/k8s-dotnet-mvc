@@ -1,7 +1,7 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: dotnet
+  name: dotnetmvc-deployment
   namespace: dotnet
 spec:
   selector:
@@ -14,7 +14,7 @@ spec:
         name: podkoname
     spec:
       containers:
-      - name: dotnet-container
+      - name: dotnetmvc-container
         image: rajanup77/dotnet-mvc
         ports:
         - containerPort: 5206
