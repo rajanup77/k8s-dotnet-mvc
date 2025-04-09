@@ -2,22 +2,17 @@ apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
   name: dotnet-mvc
-  namespace: dotnet
 spec:
-  project: dotnet
+  destination:
+    namespace: dotnet
+    server: https://kubernetes.default.svc
   source:
+    path: yamls
     repoURL: https://github.com/rajanup77/k8s-dotnet-mvc
     targetRevision: HEAD
-    path: yamls
-  destination: 
-    server: https://kubernetes.default.svc
-    namespace: dotnet
-
+  sources: []
+  project: dotnet
   syncPolicy:
-    syncOptions:
-    - CreateNamespace=false
-
     automated:
-      selfHeal: true
-      prune: true
-
+      prune: false
+      selfHeal: false
