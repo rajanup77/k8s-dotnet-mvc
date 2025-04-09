@@ -6,15 +6,15 @@ metadata:
 spec:
   selector:
     matchLabels:
-      yeha: chaapp
+      name: podkoname
   replicas: 2
   template:
     metadata:
       labels:
-        yeha: chaapp
+        name: podkoname
     spec:
       containers:
-      - name: dotnet
+      - name: dotnet-container
         image: rajanup77/dotnet-mvc
         ports:
         - containerPort: 5206
