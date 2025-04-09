@@ -5,7 +5,7 @@ metadata:
   namespace: dotnet
 spec:
   selector:
-    app: dotnet
+    yeha: chaapp
   ports:
     - name: http
       port: 80
