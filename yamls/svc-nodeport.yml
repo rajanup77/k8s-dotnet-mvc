@@ -4,7 +4,7 @@ metadata:
   name: service-nodeport
 spec:
   selector:
-    yeha: chaapp
+    name: podkoname
   ports:
   - protocol: TCP
     port: 5206
