@@ -1,0 +1,2 @@
+this is the flag to be used in metric server to use selfsigned crt
+--kubelet-insecure-tls
