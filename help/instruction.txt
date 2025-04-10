@@ -1,4 +1,4 @@
-this is the flag to be used in nginx ingress controller to usre selfsigned tls
+this is the flag to be used in nginx ingress controller to use selfsigned tls
 - '--default-ssl-certificate=ingress-nginx/ird'
 ***ingress-nginx/ird' is <namespace-name>/<tls_name>***
 
