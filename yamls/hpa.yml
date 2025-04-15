@@ -4,7 +4,7 @@ metadata:
   name: dotnet-hpa
   namespace: dotnet
 spec:
-  maxReplicas: 4
+  maxReplicas: 3
   metrics:
   - type: Resource
     resource:
