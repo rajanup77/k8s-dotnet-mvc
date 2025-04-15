@@ -4,7 +4,7 @@ metadata:
   name: dotnet-hpa
   namespace: dotnet
 spec:
-  maxReplicas: 3
+  maxReplicas: 4
   metrics:
   - type: Resource
     resource:
@@ -18,7 +18,7 @@ spec:
       target:
         averageValue: 200Mi
         type: AverageValue
-  minReplicas: 1
+  minReplicas: 2
   scaleTargetRef:
     apiVersion: apps/v1
     kind: Deployment
