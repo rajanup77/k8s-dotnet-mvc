@@ -10,13 +10,13 @@ spec:
     resource:
       name: cpu
       target:
-        averageUtilization: 20
+        averageUtilization: 70
         type: Utilization
   - type: Resource
     resource:
       name: memory
       target:
-        averageValue: 200Mi
+        averageValue: 500Mi
         type: AverageValue
   minReplicas: 2
   scaleTargetRef:
