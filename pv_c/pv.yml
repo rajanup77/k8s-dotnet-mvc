@@ -1,12 +1,14 @@
+# nfspv.yaml
 apiVersion: v1
 kind: PersistentVolume
 metadata:
   name: nfspv
-  namespace: default
 spec:
   capacity:
-    storage: 2Gi
+    storage: 5Gi
   accessModes:
-    - ReadWriteOnce
-  hostPath:
-    path: /mnt/nfs/mongo_data
+    - ReadWriteMany
+  nfs:
+    server: dc01.ad.irdlab.com
+    path: /nfs_share/mongo
+  persistentVolumeReclaimPolicy: Retain
