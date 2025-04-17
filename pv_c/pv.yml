@@ -10,5 +10,5 @@ spec:
     - ReadWriteMany
   nfs:
     server: dc01.ad.irdlab.com
-    path: /nfs_share/mongo
+    path: /nfs_share/mongo_data
   persistentVolumeReclaimPolicy: Retain
