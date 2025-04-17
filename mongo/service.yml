@@ -5,7 +5,7 @@ metadata:
   namespace: mongo
 spec:
   selector:
-    name: mongodb
+    name: mongodbpod
   ports:
     - name: http
       port: 80
