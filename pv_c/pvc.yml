@@ -1,7 +1,7 @@
 apiVersion: v1
 kind: PersistentVolumeClaim
 metadata:
-  namespace: dotnet
+  namespace: default
   name: nfspvc
 spec:
   accessModes:
