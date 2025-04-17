@@ -23,10 +23,10 @@ spec:
               mountPath: /data/db
           env:
             - name: MONGO_INITDB_ROOT_USERNAME
-              value: root
+              value: mongo
             - name: MONGO_INITDB_ROOT_PASSWORD
               value: Mongo@123
       volumes:
         - name: mongodb-storage
           persistentVolumeClaim:
-            claimName: mongodb-pvc
+            claimName: nfspvc
