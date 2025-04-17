@@ -22,9 +22,9 @@ spec:
             - name: mongodb-storage
               mountPath: /data/db
           env:
-            - name: MONGO_INITDB_ROOT_USERNAME
+            - name: MONGODB_INITDB_ROOT_USERNAME
               value: mongo
-            - name: MONGO_INITDB_ROOT_PASSWORD
+            - name: MONGODB_INITDB_ROOT_PASSWORD
               value: Mongo@123
       volumes:
         - name: mongodb-storage
