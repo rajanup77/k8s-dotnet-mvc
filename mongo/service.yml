@@ -1,0 +1,13 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: svckoname
+  namespace: mongo
+spec:
+  selector:
+    name: podkoname
+  ports:
+    - name: http
+      port: 80
+      protocol: TCP
+      targetPort: 27017
