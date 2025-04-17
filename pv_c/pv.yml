@@ -9,4 +9,4 @@ spec:
   accessModes:
     - ReadWriteOnce
   hostPath:
-    path: /mnt/nfs/dotnet
+    path: /mnt/nfs/mongo_data
