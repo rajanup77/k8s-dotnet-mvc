@@ -4,10 +4,10 @@ metadata:
   name: mongosvc
   namespace: mongo
 spec:
+  type: NodePort
   selector:
     name: mongodbpod
   ports:
-    - name: http
-      port: 80
-      protocol: TCP
-      targetPort: 27017
+    - port: 27017       # Cluster-internal port
+      targetPort: 27017 # Container port
+      nodePort: 30017   # External port (between 30000-32767)
