@@ -6,7 +6,7 @@ metadata:
 spec:
   type: NodePort
   selector:
-    name: mongodbpod
+    app: mongodbpod
   ports:
     - port: 27017       # Cluster-internal port
       targetPort: 27017 # Container port
